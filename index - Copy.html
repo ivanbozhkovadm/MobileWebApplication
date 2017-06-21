@@ -1,0 +1,70 @@
+<html>
+
+<head>
+	 <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<h1>SpeedoMeter</h1>
+<div>
+	<div id="menuButton">
+		Menu
+	</div>
+	<ul id="menu">
+	
+		<li id="Home" class="selected">Home</li>
+		<li id="SpeedInfo">Speed</li>
+		<li id="Accelerometer">Dynamic Drive</li>
+		<li id="Statistics">Statistics</li>
+	</ul>
+</div>
+
+<div id="Content">
+	<div id="Home-content" class="visible">
+		<!-- <video loop muted autoplay width="854" height="480" >
+			<source src="video.mp4" type="video/mp4" >
+		</video> -->
+		
+	</div>
+	<div id="SpeedInfo-content">
+		<div id="Location">
+			<span id="x"></span>
+			<span id="y"></span>
+		</div>
+		<br>
+		<p>SPEED: <span id="speed"></span>m/s</p>
+		<canvas id="speedDiagram" width="500" height="500"></canvas>
+		<canvas id="avarageDiagram" width="500" height="500"></canvas>
+		
+	</div>
+
+	<div id="Statistics-content">
+		<canvas id="graph" width="1000" height="200"></canvas>
+	</div>
+	
+	<div id="Accelerometer-content">
+	 	<div id="AccelerationAnimation">
+			<div id="xAccelerometer" class="line"></div>
+			<div id="yAccelerometer" class ="line"></div>
+			<div id="angle"></div>
+			<div id="guideX"></div>
+			<div id="guideY"></div>
+		</div>
+	 
+		<div id="AccelerationValues">
+			<div id="dynamicBar"></div>
+		<p>Dynamic: <span id="dynamic"></span></p>
+		<p>TEST: <span id="test"></span></p>
+		<p>acceleration x: <span id="accelerationX"></span>g</p>
+		<p>acceleration y: <span id="accelerationY"></span>g</p>
+		<p>acceleration z: <span id="accelerationZ"></span>g</p>
+		<p>rotation alpha: <span id="rotationAlpha"></span>degree</p>
+		<p>rotation beta: <span id="rotationBeta"></span>degree</p>
+		<p>rotation gamma: <span id="rotationGamma"></span>degree</p>
+		</div>
+	</div>	
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
